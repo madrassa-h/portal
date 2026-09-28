@@ -1,0 +1,21 @@
+{
+  "name": "admin_portal",
+  "short_name": "admin_portal",
+  "description": "admin_portal – Madrassa Hannover e.V.",
+  "id": "https://madrassa-h.github.io/portal/a",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf6ef",
+  "theme_color": "#1d3a6e",
+  "lang": "de",
+  "icons": [
+    {
+      "src": "../images/logo.PNG",
+      "sizes": "714x714",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
