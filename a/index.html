@@ -3207,7 +3207,7 @@ function loadDashboard(){
    Eigene, schlanke Abfrage: liest NUR Einträge mit Status abwesend/unentschuldigt
    (keine Anwesend-Dokumente) ab Halbjahresbeginn. Braucht einmalig einen
    Composite-Index (status + datum) – bei fehlendem Index steht der Link in der Konsole. */
-var DASH_KLASSEN_IGNORIEREN=['x'];   // Testklassen, die im Dashboard bei „Klassen" nicht mitgezählt werden (Name, Groß-/Kleinschreibung egal)
+var DASH_KLASSEN_IGNORIEREN=['Intern'];   // Testklassen, die im Dashboard bei „Klassen" nicht mitgezählt werden (Name, Groß-/Kleinschreibung egal)
 var DASH_AUFF_MIN=3;      // ab so vielen Fehltagen (abwesend + unentschuldigt) gilt ein Schüler als auffällig
 var _auffDaten=null;      // null = lädt noch, 'fehler' = Abfrage fehlgeschlagen, sonst Array der Einträge
 /* 1. Halbjahr ab 1. September, 2. Halbjahr ab 1. Februar. */
