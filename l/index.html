@@ -6285,7 +6285,7 @@ function renderHeuteList(){
     html+='<span class="sc-row-name" id="name-'+s.id+'" onclick="togglePhone(\''+s.id+'\')">'+s.name+'</span>';
     if(_elternMeldungMap[s.id]){
       var em=_elternMeldungMap[s.id];
-      html+='<span class="sc-eltern-badge" title="Von den Eltern entschuldigt – kein E-Mail-/Push-Versand" onclick="event.stopPropagation();setStatus(\''+s.id+'\',\'abwesend\');document.getElementById(\'sel-'+s.id+'\').value=\'abwesend\';toggleGrund(\''+s.id+'\');">'+(st==='abwesend'?'entsch. · abwesend':'entsch.')+'</span>';
+      html+='<span class="sc-eltern-badge" title="Von den Eltern entschuldigt – kein E-Mail-/Push-Versand" onclick="event.stopPropagation();setStatus(\''+s.id+'\',\'abwesend\');document.getElementById(\'sel-'+s.id+'\').value=\'abwesend\';toggleGrund(\''+s.id+'\');">'+(st==='abwesend'?'entsch.':'entsch.')+'</span>';
     }
     if(st==='unentschuldigt'&&sm.emailGesendet){
       html+='<span class="sc-email-sent" title="E-Mail wurde bereits an die Eltern gesendet" aria-label="E-Mail gesendet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg></span>';
