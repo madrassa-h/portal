@@ -1,0 +1,17 @@
+{
+  "name": "Madrassa Lern-App",
+  "short_name": "Lern-App",
+  "description": "Arabisch für Kinder – Buchstaben, Wörter & Übungen",
+  "id": "./lern_app",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1d3a6e",
+  "theme_color": "#1d3a6e",
+  "lang": "de",
+  "icons": [
+    { "src": "./logo-lern.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./logo-lern.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
