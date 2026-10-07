@@ -2,7 +2,7 @@
   "name": "Madrassa – Lehrer-Portal",
   "short_name": "Lehrer-Portal",
   "description": "Lehrer-Portal Madrassa Hannover e.V.",
- "id": "https://madrassa-h.github.io/portal/l",
+ "id": "https://madrassa-h.github.io/portal/l/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
