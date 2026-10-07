@@ -2,7 +2,7 @@
   "name": "Madrassa – Eltern-Portal",
   "short_name": "Eltern-Portal",
   "description": "Eltern-Portal Madrassa Hannover e.V.",
-  "id": "https://madrassa-h.github.io/portal/e",
+  "id": "https://madrassa-h.github.io/portal/e/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
