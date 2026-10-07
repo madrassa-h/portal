@@ -2,7 +2,7 @@
   "name": "Madrassa Lern-App",
   "short_name": "Lern-App",
   "description": "Arabisch für Kinder – Buchstaben, Wörter & Übungen",
- "id": "https://madrassa-h.github.io/portal/q",
+ "id": "https://madrassa-h.github.io/portal/q/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
