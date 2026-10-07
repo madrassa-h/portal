@@ -1,0 +1,17 @@
+{
+  "name": "Madrassa – Admin-Portal",
+  "short_name": "Admin-Portal",
+  "description": "Admin-Portal Madrassa Hannover e.V.",
+ "id": "https://madrassa-h.github.io/portal/a",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1d3a6e",
+  "theme_color": "#1d3a6e",
+  "lang": "de",
+ "icons": [
+  { "src": "./logo-admin.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+  { "src": "./logo-admin.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+]
+}
