@@ -1,0 +1,17 @@
+{
+  "name": "Madrassa – Eltern-Portal",
+  "short_name": "Eltern-Portal",
+  "description": "Eltern-Portal Madrassa Hannover e.V.",
+  "id": "/portal/e/eltern-portal",
+  "start_url": "/portal/e/index.html",
+  "scope": "/portal/e/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1d3a6e",
+  "theme_color": "#1d3a6e",
+  "lang": "de",
+  "icons": [
+    { "src": "./logo-eltern.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./logo-eltern.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
