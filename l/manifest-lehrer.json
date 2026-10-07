@@ -1,0 +1,17 @@
+{
+  "name": "Madrassa – Lehrer-Portal",
+  "short_name": "Lehrer-Portal",
+  "description": "Lehrer-Portal Madrassa Hannover e.V.",
+  "id": "/portal/l/Lehrer-portal",
+  "start_url": "/portal/l/index.html",
+  "scope": "/portal/l/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1d3a6e",
+  "theme_color": "#1d3a6e",
+  "lang": "de",
+  "icons": [
+    { "src": "./logo-lehrer.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./logo-lehrer.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
