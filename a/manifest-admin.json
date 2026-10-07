@@ -2,7 +2,7 @@
   "name": "Madrassa – Admin-Portal",
   "short_name": "Admin-Portal",
   "description": "Admin-Portal Madrassa Hannover e.V.",
- "id": "https://madrassa-h.github.io/portal/a",
+ "id": "https://madrassa-h.github.io/portal/a/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
