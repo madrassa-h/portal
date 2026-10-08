@@ -3321,7 +3321,9 @@ function naAlsGelesen(id){
   /* 1) Lokal im Eltern-Profil (blauer Punkt / Badge) */
   var ref=pfDocRef();
   if(ref)ref.set({gelesenNachrichten:firebase.firestore.FieldValue.arrayUnion(id)},{merge:true}).catch(function(){});
-  /* 2) Zentrale Lesebestätigung für die Verwaltung – Auslöser = Klick (Punkt weg) */
+  /* 2) Zentrale Lesebestätigung für Admin
+     a) gelesenIds + Zähler direkt auf der Nachricht (Admin liest das ohnehin)
+     b) optional Detail in nachrichtenGelesen/…/leser */
   var email=(_familieEmail||(_auth&&_auth.currentUser&&_auth.currentUser.email)||'').trim().toLowerCase();
   var key=(email||(_auth&&_auth.currentUser&&_auth.currentUser.uid)||'unbekannt').replace(/\//g,'_');
   var name=(_pfDaten&&_pfDaten.name)||'';
@@ -3329,18 +3331,18 @@ function naAlsGelesen(id){
     var k=(_meineKinder||[]).find(function(x){return x.elternName;});
     name=(k&&k.elternName)||email||'Eltern';
   }
+  _db.collection('nachrichten').doc(id).set({
+    gelesen:firebase.firestore.FieldValue.increment(1),
+    gelesenVorhanden:true,
+    gelesenIds:firebase.firestore.FieldValue.arrayUnion(key)
+  },{merge:true}).catch(function(){});
   _db.collection('nachrichtenGelesen').doc(id).collection('leser').doc(key).set({
     key:key,
     email:email,
     name:name,
     rolle:'eltern',
     am:firebase.firestore.FieldValue.serverTimestamp()
-  },{merge:true}).then(function(){
-    return _db.collection('nachrichten').doc(id).set({
-      gelesen:firebase.firestore.FieldValue.increment(1),
-      gelesenVorhanden:true
-    },{merge:true});
-  }).catch(function(){});
+  },{merge:true}).catch(function(){});
 }
 /* Blendet eine Nachricht nur für diese Familie aus (nicht für andere Eltern –
    die Mitteilung selbst bleibt in der Verwaltung erhalten). */
